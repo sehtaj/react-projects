@@ -1,0 +1,13 @@
+
+
+export const fetchWeatherData = async (cityName) => {
+    const API_KEY = "dbaf950db7034b5ebf8172743250706"
+      try {
+        const url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${cityName}`;
+        const response = await fetch(url);
+        const data = await response.json();
+        return data
+    } catch (error) {
+        console.log(error);
+      }
+};
