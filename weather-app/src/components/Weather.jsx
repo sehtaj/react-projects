@@ -1,17 +1,26 @@
-import SunnyIcon from '@mui/icons-material/WbSunny';
 import './Weather.css';
+import {fetchWeatherData} from "../getWeatherData"
+import { useState, useEffect } from "react";
 
+export default function Weather({findCity}) {
 
-export default function Weather({weatherData}) {
+  const [weather, setWeather] = useState(null);
+
+  useEffect(() => {
+
+    async function fetchWeather() {
+      const data = await fetchWeatherData(findCity);
+        setWeather(data);
+    }
+    fetchWeather();
+  }, [findCity]);
 
   return (
     <div className="weather-card">
-      <p className="weather-location">Location : {weatherData.city}</p>
-      <p className="weather-temp"> Temperature : {weatherData.temp}</p>
-      <p className="weather-wind-speed"> Wind Speed : {weatherData.wind}</p>
-      <p className="weather-humidity"> Humidity :{weatherData.humidity}</p>
-      
-      <SunnyIcon className="weather-icon" />
+      <p className="weather-location">Location : {weather?.city}</p>
+      <p className="weather-temp"> Temperature : {weather?.temp}°C</p>
+      <p className="weather-wind-speed"> Wind Speed : {weather?.wind} kmph</p>
+      <p className="weather-humidity"> Humidity :{weather?.humidity}</p>
     </div>
   );
 }
