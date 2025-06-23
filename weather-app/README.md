@@ -4,7 +4,7 @@ A modern weather application built with React that displays current weather cond
 
 ## Screenshot
 
-![App Screenshot](./assets/screenshot.png)
+<img width="1449" alt="Screenshot 2025-06-24 at 12 34 30 AM" src="https://github.com/user-attachments/assets/a4bf1f1c-c58a-42b7-b8bd-e794305ff9c8" />
 
 ## 🚀 Features
 
