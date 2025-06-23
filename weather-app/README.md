@@ -45,6 +45,7 @@ weather-app/
 │   ├── getWeatherData.js     # Weather API service/fetching logic
 │   ├── index.css             # Global/base styles (CSS reset, fonts, etc.)
 │   └── main.jsx              # JavaScript entry point (renders React app)
+```
 ---
 
 ## 📦 Setup & Installation
@@ -53,6 +54,7 @@ weather-app/
    ```bash
    git clone https://github.com/sehtaj/weather-app.git
    cd weather-app
+   ```
 
 2. **Install Dependencies**
 ```bash
