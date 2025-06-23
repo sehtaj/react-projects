@@ -1,12 +1,14 @@
+import './Repos.css';
+
 function Repos({ repos }) {
   return (
-    <div>
+    <div className="repos">
       <h3>Repositories:</h3>
       <ul>
         {repos.map((repo) => (
-            <a href={repo.html_url}> 
+          <a href={repo.html_url} target="_blank" rel="noopener noreferrer" key={repo.id}>
             <li>{repo.name}</li>
-            </a>
+          </a>
         ))}
       </ul>
     </div>

@@ -1,0 +1,19 @@
+.repos {
+  margin-top: 2rem;
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.repos h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.repos li:hover {
+  color: #2d81e0;
+}
