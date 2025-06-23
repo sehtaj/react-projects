@@ -2,6 +2,11 @@
 
 A clean, responsive React application for searching GitHub users and viewing their profiles and repositories.
 
+## Screenshot
+<img width="1449" alt="Screenshot 2025-06-23 at 4 14 11 PM" src="https://github.com/user-attachments/assets/fd029072-3d02-4231-ae96-3966175f4b15" />
+
+
+
 ## 🚀 Features
 
 - Search for any GitHub user by username
@@ -31,16 +36,23 @@ CSS Modules for styling
 ## 📁 Project Structure
 ```bash
 github-user-finder/
+├── public/ # Static assets
 ├── src/
-│   ├── components/
-│   │   ├── Repos.jsx      # Repository list component
-│   │   ├── SearchBar.jsx  # Search functionality
-│   │   └── UserData.jsx   # User profile component
-│   ├── fetchData.js       # API calls
-│   ├── App.jsx            # Main application
-│   └── main.jsx           # Entry point
-├── public/                # Static assets
-└── vite.config.js         # Vite configuration
+│ ├── components/ # React components
+│ │ ├── Repos.jsx # Repository list component
+│ │ ├── Repos.css # Repository styles
+│ │ ├── SearchBar.jsx # Search functionality
+│ │ ├── SearchBar.css # Search bar styles
+│ │ ├── UserData.jsx # User profile component
+│ │ └── UserData.css # User profile styles
+│ ├── fetchData.js # API calls
+│ ├── App.jsx # Main application
+│ ├── App.css # Global app styles
+│ ├── main.jsx # Entry point
+│ └── index.css # Base styles
+├── package.json
+├── vite.config.js
+└── README.md
 ```
 ---
 
