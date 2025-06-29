@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(29, 29, 29);
+  margin: 0%;
+  padding-bottom: 120px;
+}
+
+.screen-split {
+  display: flex;
+  height: calc(100vh - 120px);
+  width: 100%;
+  height: calc(100vh - 60px);
+  margin-top: 20px;
+}
+
+.left-half,
+.right-half {
+  flex: 1;
+  padding: 20px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  padding-bottom: 40px;
+    line-height: 1.8; /* Increased from default 1.2-1.5 */
+  padding: 25px; /* Slightly more padding */
+}
+
+.left-half {
+  background-color: #45454f;
+  color: white;
+}
+
+.right-half {
+  background-color: #333335;
+  color: #e0e0e0;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+h1 {
+  border: none;
+  background: none;
+  text-align: center;
+  color: white;
+  padding: none;
+  margin: none;
+}
