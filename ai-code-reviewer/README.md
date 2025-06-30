@@ -1,12 +1,70 @@
-# React + Vite
+# AI Code Reviewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive React app that allows developers to paste code and receive **AI-powered feedback** including suggestions, improvements, and best practices
 
-Currently, two official plugins are available:
+## Screenshot
+<img width="1470" alt="Screenshot 2025-06-30 at 8 59 20 PM" src="https://github.com/user-attachments/assets/6dbaa37e-faa7-47e3-85e5-76ce8e25588c" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Paste your code and click **Analyze**
+- Get real-time AI feedback:
+  -  Code quality suggestions
+  -  Performance tips
+  -  Security warnings
+  -  Best practice recommendations
+- Displays input as a **chat bubble**
+- Result shows up on the **right half of the screen**
+- Modern, minimal chat-style interface
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- **React (Vite)**
+- **Material UI** – UI components
+- **Cohere/OpenAI API** – AI analysis
+- **CSS Modules** – Component-based styling
+---
+## 📁 Project Structure
+```bash
+ai-code-reviewer/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── SearchBar.jsx     # Input bar (bottom-fixed)
+│   │   ├── SearchBar.css     # Search bar styles
+│   │   ├── Code.jsx          # Displays user's code input (left side)
+│   │   ├── Code.css          # Styles for code bubble
+│   │   ├── Result.jsx        # Displays AI response (right side)
+│   │   └── Result.css        # Styles for AI output
+│   ├── fetchData.js          # API call logic (OpenAI or Cohere)
+│   ├── App.jsx               # Main application layout
+│   ├── App.css               # Global layout styling
+│   ├── main.jsx              # Entry point
+│   └── index.css             # Base styling
+├── .env                      # API key stored here
+├── package.json
+├── vite.config.js
+└── README.md
+```
+---
+
+## 📦 Setup & Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone git clone https://github.com/your-username/github-user-finder.git
+   cd github-user-finder
+
+2. **Install Dependencies**
+```bash
+npm install
+```
+3. **Add your API key**
+   ```bash
+   VITE_API_KEY=your-api-key-here
+   ```
+
+5. **Run the development server**
+```bash
+npm run dev
+```
